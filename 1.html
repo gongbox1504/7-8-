@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" xmins="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+   <title></title>
+   
+   <style>
+       body {
+           margin:0px;
+       }
+       #header {
+           border-top: 2px solid red;
+           background-color: darkgray
+       }
+       #header h1 {
+           margin:0 10px;
+           text-align: center;
+           
+       }
+       #header h1 a {
+           color:red;
+           text-decoration: none;
+       }
+       #JS {
+           border-top:2px solid red;
+           border-bottom: 2px solid red;
+           padding:5px 0;
+           margin:0;
+           background-color:dodgerblue;
+           text-align: center;
+       }
+       input {
+           background-color: red;
+           border:2px solid white;
+           border-radius: 60px;
+           color:white;
+       }
+       
+       ul {
+           margin:0;
+           padding:10px 0 0 35px;
+           border-right: 2px solid red;
+           
+       }
+       #content {
+           margin:0;
+           padding:0 20px;
+           border-right: 2px solid red;
+           
+       }
+       #image {
+           text-align: center;
+       }
+       #grid {
+           display:grid;
+           grid-template-columns: 150px 1fr;
+       }
+       #footer {
+           border-top:2px solid red;
+           padding-top:0;
+           text-align: center;
+           font-size:13px;
+           color:grey;
+       }
+    </style>
+</head>
+<body>
+  
+   <div id="header">
+       <h1><a href="#">WEB</a></h1>
+    </div>
+    
+    <div id="JS">
+    <input type="button" value="Night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#footer'>.style.color='red';">
+
+    <input type="button" value="Day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';">
+    </div>
+    
+    <div id="grid">   
+       <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+       
+    <div id="content">
+        <h2>HTML이란 무엇인가?</h2>
+        <p>Hypertext markup language is the standard markup language for creating web pages and web applications.</p><br>
+        <div id="image">
+        <img src="https://heropy.blog/css/images/vendor_icons/html5.png" width="250"/>
+        </div>
+
+   </div>
+    </div>
+    
+   <div id="footer">
+       <p class="footer">Copyright 2020. Jiwon Jung all rights reserved</p>
+   </div>
+   
+</body>
+</html>
